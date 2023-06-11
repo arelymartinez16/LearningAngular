@@ -18,7 +18,8 @@
             </div>
         </div>
         <div class="table-responsive">
-            <table class="table">
+            <!-- if the array is empty, the table wouldn't show otherwise the table will show -->
+            <table class="table" *ngIf="products.length">
                 <thead>
                     <tr>
                         <th>
