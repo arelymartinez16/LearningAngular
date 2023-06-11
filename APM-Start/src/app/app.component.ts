@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
 
+// Define component decorator
 @Component({
   selector: 'pm-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <div>
+    <h1>{{pageTitle}}</h1>
+    <div>My First component</div>
+  </div>
+  `
 })
+
+// Creating class
 export class AppComponent {
-  title = 'Angular: Getting Started';
+  pageTitle: string = "Acme Product Management"
 }
