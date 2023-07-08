@@ -5,7 +5,6 @@ import { ProductService } from "./product.service";
 
 // this makes the class a component
 @Component({
-    selector: "pm-products",
     templateUrl: "./product-list-component.html",
     styleUrls: ["./product-list-component.css"]
 })
